@@ -1,0 +1,75 @@
+
+
+body {
+    background: beige;
+}
+
+
+
+.container {
+    justify-content: center;
+}
+
+
+
+
+div.greeting {
+    text-align: center;
+    font-family: Calibri;
+    font-size: larger;
+}
+
+div.greeting img {
+    border-radius: 50px;
+}
+
+div.greeting span {
+    color: salmon;
+}
+
+div.greeting img {
+    width: 20%;
+    height: 20%;
+}
+
+
+
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Calibri;
+    font-size: xx-large;
+}
+
+div.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+
+div.link a {
+    font-family: sans-serif;
+    display: block;
+    height: 200px;
+    width: 200px;
+    color: white;
+    background: lightsalmon;
+    margin: 10px;
+    text-align: center;
+    padding: 25px 25px;
+    border-radius: 25px;
+    
+}
+
+div.link img {
+    height: 200px;
+    width: 200px;
+}
+
+div.link a:hover:not(.active) {
+    background-color: salmon;
+}

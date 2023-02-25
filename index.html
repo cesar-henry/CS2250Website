@@ -3,36 +3,40 @@
     <head>
         <!-- Requirement-1.A -->
         <title>Cesar's Personal Wesbite</title>
+        <link rel="stylesheet" href="CSS/styles.css">
     </head>
     <body>
         <!-- Requirement-1.B -->
         <header>CS 2250.01 - Intro to Web Science and Technology</header>
 
         <!-- Requirement-1.F -->
-        <h1>
-            My name is<br>
-            <!-- Requirement-1.H -->
-            <span style="color:lightcoral">Cesar Henry de Paula.</span>
-        </h1>
+
+        <div class="greeting">
+            <h1>
+                My name is<br>
+                <!-- Requirement-1.H -->
+                <span>Cesar Henry de Paula.</span>
+            </h1>
+            
+            <br>
+    
+            <!-- Requirement-1.N -->
+            <img src="images/impromptupic.jpg" alt="mugshot of cesar">
+        </div>
         
-        <br>
-
-        <!-- Requirement-1.N -->
-        <img src="images/impromptupic.jpg" alt="mugshot of cesar" width="400" height="250">
-
         <br>
 
         <!-- Requirement-1.E -->
         <section>
-            <h2>Information</h2>
+            
             <article>
-                <h3>About me</h3>
+                <h3 class="head">About me</h3>
                 I am a 20-year-old college student studying computer science at Cal Poly Pomona.<br>
                 I am in my 3rd year in university, and I am aiming to graduate by Fall of 2024. Please hire me.
             </article>
         
             <article>
-                <h3>Programming Languages</h3>
+                <h3 class="head">Programming Languages</h3>
                 <!-- Requirement-1.K-->
                 <ul>
                     <li>Python</li>
@@ -42,24 +46,21 @@
             </article>
         </section>
 
-        
-
-        <aside>
-
+        <div class="head">
             <h3>Links</h3>
-            <!-- Requirement-1.D -->
-            <nav>
-                <!-- Requirement-1.J -->
+        </div>
+
+        <div class="menu">
+            <div class="link">
                 <a href="aboutme.html">More About Me</a>
-
-                <!-- Requirement-1.I -->
+            </div>
+            <div class="link">
                 <a href="https://github.com/cesar-henry">Github</a>
-
+            </div>
+            <div class="link">
                 <a href="reviews.html">Movie/Show Reviews</a>
-                
-            </nav>
-        </aside>
-        <br>
+            </div>
+        </div>
 
         <!-- Requirement-1.C -->
         <footer>End of Page</footer>
