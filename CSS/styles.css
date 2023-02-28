@@ -1,75 +1,141 @@
-
-
 body {
-    background: beige;
+    background: beige; /* Requirement-2.4 */
 }
 
-
-
-.container {
-    justify-content: center;
+#mainTitle, #aboutMeTitle, #reviewTitle { /* Requirement-2.D */
+    font-family: Calibri; /* Requirement-2.1 */
+    font-size: xxx-large;
+    text-align: center; /* Requirement-2.2 */
 }
 
-
-
-
-div.greeting {
-    text-align: center;
-    font-family: Calibri;
-    font-size: larger;
+.intro span { /* Requirement-2.F */
+    color: salmon; /* Requirement-2.3 */
 }
 
-div.greeting img {
-    border-radius: 50px;
-}
-
-div.greeting span {
-    color: salmon;
-}
-
-div.greeting img {
-    width: 20%;
+.intro img {
+    display: flex; /* Requirement-2.12 */
     height: 20%;
+    width: 20%; /* Requirement2.7 */
+    margin: auto;
+    border-radius: 25px; /* Requirement-2.5 */
+    background: salmon;
+    padding: 10px; /* Requirement-2.6 */
 }
 
-
-
-.head {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.header { /* Requirement-2.C */
     font-family: Calibri;
     font-size: xx-large;
+    font-style: italic;
+    text-align: center;
 }
 
-div.menu {
+div.aboutMe, div.proLang, p.bio { /* Requirement-2.B */
+    background: lightsalmon;
+    border-radius: 25px;
+    padding: 15px;
+    border: 10px salmon;
+    border-style: solid;
+    color: white;
+    width: 50%;
+    margin: auto;
+}
+
+div.proLang {
+    width: 200px;
+}
+
+p.bio {
+    font-family: Calibri;
+    font-size: 25px;
+}
+
+.menu {
+    text-align: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height: 100%;
-    align-items: center;
+    font-family: Calibri;
+    font-size: large;;
+}
+
+.link a { /* Requirement-2.E */
+    display: block;
+    background: lightsalmon;
+    margin: 10px;
+    padding: 20px;
+    height: 25px;
+    width: 200px;
+    border-radius: 25px;
+    border: 10px salmon;
+    border-style: solid;
+    color: white;
+}
+
+.link a:hover {
+    display: block;
+    background: salmon;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 25px;
+    border: 10px salmon;
+    border-style: solid;
+    color: white;
+}
+
+.link a:active {
+    display: block;
+    background: darksalmon;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 25px;
+    border: 10px darksalmon;
+    border-style: solid;
+    color: white;
 }
 
 
-div.link a {
-    font-family: sans-serif;
-    display: block;
-    height: 200px;
-    width: 200px;
-    color: white;
-    background: lightsalmon;
-    margin: 10px;
+ul { /* Requirement-2.A */
+    list-style-type: disc; /* Requirement-2.8 */
+    font-family: Calibri;
+    font-size: 25px;
+    clear: left; /* Requirement-2.13 */
+}
+
+#backButton {
+    font-family: Calibri;
     text-align: center;
-    padding: 25px 25px;
-    border-radius: 25px;
+    font-size: large;
+}
+
+/* Requirement-2.G */
+details {
+    text-align: center;
+}
+
+
+.hobbies {
+    font-family: Calibri;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+/* Requirement-2.H */
+summary {
+    padding: 10px;
     
 }
 
-div.link img {
-    height: 200px;
-    width: 200px;
+.description { 
+    font-family: Calibri;
+    font-size: 25px;
+    color: white;
+    padding: 20px;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 20px;
+    background: lightsalmon;
+    border-radius: 25px;
+    border: 10px salmon;
+    border-style: solid;
 }
 
-div.link a:hover:not(.active) {
-    background-color: salmon;
-}
