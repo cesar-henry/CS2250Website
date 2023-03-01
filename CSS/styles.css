@@ -6,6 +6,8 @@ body {
     font-family: Calibri; /* Requirement-2.1 */
     font-size: xxx-large;
     text-align: center; /* Requirement-2.2 */
+
+    
 }
 
 .intro span { /* Requirement-2.F */
@@ -14,13 +16,15 @@ body {
 
 .intro img {
     display: flex; /* Requirement-2.12 */
-    height: 20%;
     width: 20%; /* Requirement2.7 */
     margin: auto;
     border-radius: 25px; /* Requirement-2.5 */
     background: salmon;
     padding: 10px; /* Requirement-2.6 */
+    position: relative;
 }
+
+
 
 .header { /* Requirement-2.C */
     font-family: Calibri;
@@ -32,12 +36,13 @@ body {
 div.aboutMe, div.proLang, p.bio { /* Requirement-2.B */
     background: lightsalmon;
     border-radius: 25px;
-    padding: 15px;
+    padding: 15px; /* Requirement-2.9 */
     border: 10px salmon;
     border-style: solid;
     color: white;
-    width: 50%;
+    width: 50%; /* Requirement-2.10 */
     margin: auto;
+    
 }
 
 div.proLang {
@@ -47,6 +52,7 @@ div.proLang {
 p.bio {
     font-family: Calibri;
     font-size: 25px;
+    
 }
 
 .menu {
@@ -55,7 +61,7 @@ p.bio {
     flex-wrap: wrap;
     justify-content: center;
     font-family: Calibri;
-    font-size: large;;
+    font-size: large;
 }
 
 .link a { /* Requirement-2.E */
@@ -105,6 +111,7 @@ ul { /* Requirement-2.A */
     font-family: Calibri;
     text-align: center;
     font-size: large;
+    clear: left;
 }
 
 /* Requirement-2.G */
@@ -112,11 +119,18 @@ details {
     text-align: center;
 }
 
+details img {
+    width: 300px;
+    /* Requirement-2.11 */
+    position: relative; /* Requirement-2.15 */
+    z-index: 1; /* Requirement-2.17 */
+}
 
 .hobbies {
     font-family: Calibri;
     font-size: x-large;
     font-weight: bold;
+    
 }
 
 /* Requirement-2.H */
@@ -129,7 +143,7 @@ summary {
     font-family: Calibri;
     font-size: 25px;
     color: white;
-    padding: 20px;
+    padding: 20px; 
     width: 60%;
     margin: auto;
     margin-bottom: 20px;
@@ -139,3 +153,38 @@ summary {
     border-style: solid;
 }
 
+table {
+    border: 10px;
+    border-style: solid;
+    border-radius: 25px;
+    width: 50%;
+    font-family: Calibri;
+    background: lightsalmon;
+    color: white;
+    border-color: salmon;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    visibility: visible; /* Requirement-2.16 */
+}
+
+
+p.review {
+    float: left; /* Requirement-2.11 */
+    padding: 30px;
+    overflow: auto; /* Requirement-2.14 */
+}
+
+.cover img {
+    border-radius: 25px;
+    margin: 10px;
+}
+
+footer {
+    position: absolute; 
+}
+
+.desperation {
+    font-weight: bolder;
+    font-size: 25px;
+}
